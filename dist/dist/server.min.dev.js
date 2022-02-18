@@ -1,0 +1,8 @@
+"use strict";
+
+var http = require("http"),
+    port = 3e3,
+    app = require("./app"),
+    server = http.createServer(app);
+
+server.listen(port);

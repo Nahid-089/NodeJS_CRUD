@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const studentsSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     name:  String,
-    batch:String
+    batch: String
 
 })
 

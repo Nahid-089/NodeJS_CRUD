@@ -1,0 +1,23 @@
+"use strict";
+
+var express = require("express"),
+    router = express.Router(),
+    mongoose = require("mongoose"),
+    students = require("../models/students");
+
+router.get("/", function (e, s, t) {
+  s.status(200).json({
+    message: "Get Requests"
+  });
+}), router.post("/", function (e, s, t) {
+  var o = new o({
+    _id: mongoose.Types.ObjectId(),
+    name: e.body.name,
+    batch: e.body.batch
+  });
+  o.save().then(function (e) {
+    return s.status(200).json(e);
+  })["catch"](function (e) {
+    return s.status(500).json(e);
+  });
+}), module.exports = router;

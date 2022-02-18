@@ -6,7 +6,7 @@ var router = express.Router();
 
 var mongoose = require('mongoose');
 
-var students = require('../models/students');
+var student = require('../models/students');
 
 router.get('/', function (req, res, next) {
   res.status(200).json({
