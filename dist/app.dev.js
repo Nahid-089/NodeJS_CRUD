@@ -8,7 +8,8 @@ var mongoose = require('mongoose');
 
 var studentRoutes = require('./api/routes/student');
 
-mongoose.connect('mongodb+srv://nahid_089:' + process.env.MANGO_PASS + '@cluster0.h0rib.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+var newLocal = 'mongodb+srv://nahid_089:';
+mongoose.connect("mongodb+srv://nahid_089:" + process.env.MANGO_PASS + '@cluster0.h0rib.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
